@@ -1,0 +1,77 @@
+Statistical Analysis Report
+============================
+
+Descriptive Statistics:
+
+Sales Data:
+        Sale_ID  Product_ID  Customer_ID  Quantity  Sale_Amount
+count  9.000000    9.000000     9.000000  9.000000     9.000000
+mean   5.000000  102.000000   203.000000  2.888889  3222.222222
+std    2.738613    0.866025     1.732051  1.763834  1734.054337
+min    1.000000  101.000000   201.000000  1.000000  1000.000000
+25%    3.000000  101.000000   202.000000  2.000000  2000.000000
+50%    5.000000  102.000000   203.000000  2.000000  3000.000000
+75%    7.000000  103.000000   204.000000  4.000000  4500.000000
+max    9.000000  103.000000   206.000000  6.000000  6000.000000
+
+Purchases Data:
+       Purchase_ID  Product_ID  Supplier_ID   Quantity  Purchase_Amount
+count     9.000000    9.000000     9.000000   9.000000         9.000000
+mean      5.000000  102.000000   302.000000  16.666667     17333.333333
+std       2.738613    0.866025     0.866025   7.905694      7685.213074
+min       1.000000  101.000000   301.000000   5.000000      7500.000000
+25%       3.000000  101.000000   301.000000  10.000000     12000.000000
+50%       5.000000  102.000000   302.000000  15.000000     16000.000000
+75%       7.000000  103.000000   303.000000  20.000000     22500.000000
+max       9.000000  103.000000   303.000000  30.000000     30000.000000
+
+Inventory Data:
+       Product_ID      Stock
+count         3.0   3.000000
+mean        102.0  30.666667
+std           1.0  12.583057
+min         101.0  19.000000
+25%         101.5  24.000000
+50%         102.0  29.000000
+75%         102.5  36.500000
+max         103.0  44.000000
+
+Products Data:
+       Product_ID        Price
+count         3.0     3.000000
+mean        102.0  1166.666667
+std           1.0   288.675135
+min         101.0  1000.000000
+25%         101.5  1000.000000
+50%         102.0  1000.000000
+75%         102.5  1250.000000
+max         103.0  1500.000000
+
+Correlation Matrix:
+                 Sale_Amount  Purchase_Amount     Stock     Price
+Sale_Amount         1.000000         0.615155  0.962103 -0.609994
+Purchase_Amount     0.615155         1.000000  0.931127 -0.530281
+Stock               0.962103         0.931127  1.000000 -0.802955
+Price              -0.609994        -0.530281 -0.802955  1.000000
+
+Interpretation:
+Correlation with Sale_Amount:
+ - Purchase_Amount: 0.62 (Strong Correlation)
+ - Stock: 0.96 (Very Strong Correlation)
+ - Price: -0.61 (No or Very Weak Correlation)
+
+Correlation with Purchase_Amount:
+ - Sale_Amount: 0.62 (Strong Correlation)
+ - Stock: 0.93 (Very Strong Correlation)
+ - Price: -0.53 (No or Very Weak Correlation)
+
+Correlation with Stock:
+ - Sale_Amount: 0.96 (Very Strong Correlation)
+ - Purchase_Amount: 0.93 (Very Strong Correlation)
+ - Price: -0.80 (No or Very Weak Correlation)
+
+Correlation with Price:
+ - Sale_Amount: -0.61 (No or Very Weak Correlation)
+ - Purchase_Amount: -0.53 (No or Very Weak Correlation)
+ - Stock: -0.80 (No or Very Weak Correlation)
+

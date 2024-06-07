@@ -1,0 +1,34 @@
+Analisis Korelasi
+==================
+
+Deskripsi:
+Analisis ini dilakukan untuk memahami hubungan antara jumlah penjualan, jumlah pembelian, persediaan, dan harga produk.
+
+Matriks Korelasi:
+                 Sale_Amount  Purchase_Amount     Stock     Price
+Sale_Amount         1.000000         0.615155  0.962103 -0.609994
+Purchase_Amount     0.615155         1.000000  0.931127 -0.530281
+Stock               0.962103         0.931127  1.000000 -0.802955
+Price              -0.609994        -0.530281 -0.802955  1.000000
+
+Interpretasi:
+Korelasi dengan Sale_Amount:
+ - Purchase_Amount: 0.62 (Korelasi kuat)
+ - Stock: 0.96 (Korelasi sangat kuat)
+ - Price: -0.61 (Tidak ada korelasi atau korelasi sangat lemah)
+
+Korelasi dengan Purchase_Amount:
+ - Sale_Amount: 0.62 (Korelasi kuat)
+ - Stock: 0.93 (Korelasi sangat kuat)
+ - Price: -0.53 (Tidak ada korelasi atau korelasi sangat lemah)
+
+Korelasi dengan Stock:
+ - Sale_Amount: 0.96 (Korelasi sangat kuat)
+ - Purchase_Amount: 0.93 (Korelasi sangat kuat)
+ - Price: -0.80 (Tidak ada korelasi atau korelasi sangat lemah)
+
+Korelasi dengan Price:
+ - Sale_Amount: -0.61 (Tidak ada korelasi atau korelasi sangat lemah)
+ - Purchase_Amount: -0.53 (Tidak ada korelasi atau korelasi sangat lemah)
+ - Stock: -0.80 (Tidak ada korelasi atau korelasi sangat lemah)
+
