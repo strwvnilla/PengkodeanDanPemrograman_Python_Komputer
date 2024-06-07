@@ -1,5 +1,6 @@
 # PengkodeanDanPemrograman_Python_Komputer
-Pengkodean dan Pemrograman Kelas F Python Komputer
+Pengkodean dan Pemrograman Kelas F 
+# Data Analisis Komputer
 Septi Prita Nugraheni 12030122130146
 
 # "PENJUALAN DAN PEMBELIAN KOMPUTER"
